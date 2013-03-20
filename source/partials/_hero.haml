@@ -2,9 +2,10 @@
 .hero-unit
   %h1 #{data.page.title || "Chubs Rocks!"}
   %pre
-    | #{data.inspect.to_yaml}
-    | self:
-    | #{self}
+    :plain
+      #{data.inspect.to_yaml}
+      self:
+      #{self}
   %p
     :markdown
       Chubbs is a [Middleman](http://middlemanapp.com/) template that helps you quick start 

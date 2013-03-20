@@ -1,7 +1,7 @@
 .navbar.navbar-fixed-top
 	.navbar-inner
 		.container
-			%a.brand(href="#") Chubbs Middleman template
+			%a.brand(href="#") Chubbs Middleman template #{data.page.name}
 			.nav-collapse
 				%ul.nav
 					%li{:class => data.page.name == 'index' ? 'active' : ''}
