@@ -19,7 +19,7 @@ body {
 .markdown-body {
   H1, H2, H3, H4, H5, H6 {
     &.autolink {
-
+      position: relative;
     }
 
   }
@@ -40,10 +40,22 @@ body {
       padding-left: 0;
 
     }
+    .icon-link {
+
+      display: inline-block;
+    }
+  }
+  .icon-link {
+
+    display: none;
   }
   .permalink {
-    display: none;
+    display: block;
+    position: absolute;
     padding-left: 30px;
     margin-left: -30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
   }
 }
