@@ -15,3 +15,35 @@
 
 body {
 }
+
+.markdown-body {
+  H1, H2, H3, H4, H5, H6 {
+    &.autolink {
+
+    }
+
+  }
+}
+
+.header {
+
+}
+
+.autolink {
+  &:hover {
+    .permalink {
+      display: block;
+      text-decoration: none;
+      display: block;
+      position: absolute;
+      margin-left: -30px;
+      padding-left: 0;
+
+    }
+  }
+  .permalink {
+    display: none;
+    padding-left: 30px;
+    margin-left: -30px;
+  }
+}

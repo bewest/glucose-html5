@@ -2,15 +2,14 @@
 # Compass
 ###
 
+require 'redcarpet'
+require 'builder'
+require 'haml'
 # Bootstrap
 # First: 
 #    gem install sass-rails
 #    gem install bootstrap-sass
 require 'bootstrap-sass'
-
-# Susy grids in Compass
-# First: gem install compass-susy-plugin
-# require 'susy'
 
 # Change Compass configuration
 compass_config do |config|
@@ -55,6 +54,8 @@ end
 #     "Helping"
 #   end
 # end
+
+
 
 set :css_dir, 'stylesheets'
 
