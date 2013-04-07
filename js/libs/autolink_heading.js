@@ -1,0 +1,1 @@
+(function(){var e;e=function(){return $("H1, H2, H3, H4, H5, H6").filter("[id]").each(function(e,t){var n,r,i;return n=$(this),i="#"+n.attr("id"),r=$("<A>").attr({name:i,href:i}).addClass("permalink autolink").append($("<SPAN>").addClass("icon-link").text(" ")),n.addClass("autolink header").prepend(r)})},$(document).ready(e)}).call(this);
