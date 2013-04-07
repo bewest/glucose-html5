@@ -23,7 +23,7 @@ var csv_text = 'date,sugar\n\
     json = d3.csv.parse(csv_text);
     json.forEach(fix_row);
 
-    var url = '/data/sugars.csv';
+    var url = '../../data/sugars.csv';
     draw_graph(json);
 
     d3.csv(url, update_data);
