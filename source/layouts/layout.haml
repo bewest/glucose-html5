@@ -29,8 +29,8 @@
 
     #main{ :role => 'main' }
       = yield
-      .markdown-content.entry-body
-      = yield_content :content
+      .markdown-body.entry-body
+        = yield_content :content
 
     = partial "partials/footer"
   / ! end of #container
