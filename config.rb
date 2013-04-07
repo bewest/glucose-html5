@@ -69,6 +69,9 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
+page "/demos/zoom/*", :directory_indexes => false
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
