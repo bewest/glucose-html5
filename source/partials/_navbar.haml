@@ -2,7 +2,7 @@
   .navbar-inner
     = partial "partials/github_ribbon"
     .container
-      %a.brand(href="#") Chubbs Middleman template #{data.page.name}
+      = link_to("Glycemia HTML5 #{data.page.name}", "/#", :class => 'brand')
       .nav-collapse
         %ul.nav
           %li{:class => data.page.name == 'index' ? 'active' : ''}
@@ -10,4 +10,4 @@
           %li{:class => data.page.name == 'twocolumns' ? 'active' : ''}
             %a(href="twocolumns") Two Columns Layout
           %li{:class => data.page.name == 'contact' ? 'active' : ''}
-            %a(href="contact") Contact
+            = link_to("Contact", "contact")

@@ -1,11 +1,14 @@
 <!-- Main hero unit for a primary marketing message or call to action -->
 .hero-unit
   %h1 #{data.page.title || "Chubs Rocks!"}
-  %pre
-    :plain
-      #{data.inspect.to_yaml}
-      self:
-      #{self}
+  .debug{:style => "display: none;"}
+    %pre
+      :plain
+        #{data.inspect.to_yaml}
+        self:
+        #{self.methods.to_yaml}
+        page:
+        #{current_page.methods.to_yaml}
   %p
     Studying
     %span.brand glycemia
