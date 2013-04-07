@@ -1,0 +1,17 @@
+#!/bin/bash
+
+find -type f  \
+  \( -name "*.markdown" -or \
+     -name "*.html" -or \
+     -name "*.slim" -or \
+     -name "*.js" -or \
+     -name "*coffee" -or \
+     -name "*.scss" -or \
+     -name "*.css" -or \
+     -name "*.haml" \) \
+     -not \( -path "./js/vendor/*" \
+      -or    -name "*[-.]min.js" \) \
+  -exec vim {} +
+
+#####
+# EOF

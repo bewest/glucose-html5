@@ -35,6 +35,9 @@ end
 # with_layout :admin do
 #   page "/admin/*"
 # end
+with_layout :gist do
+  page "/demos/*"
+end
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
@@ -61,7 +64,7 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'js'
 
-set :images_dir, 'img'
+set :images_dir, 'images'
 
 activate :directory_indexes
 
@@ -85,5 +88,5 @@ configure :build do
   # activate :smusher
   
   # Or use a different image path
-  set :http_path, "/img/"
+  set :http_path, "/images/"
 end
