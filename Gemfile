@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "middleman-gh-pages"
 gem "builder"
 gem "redcarpet"
 gem "slim"
