@@ -62,7 +62,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("../data/ipancreas_time_heatmap.json", function(error, data) {
+d3.json("../../data/ipancreas_time_heatmap.json", function(error, data) {
 
   var glucose = svg.selectAll(".glucose")
       .data(data)
