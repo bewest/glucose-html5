@@ -14,7 +14,8 @@ require 'bootstrap-sass'
 # Change Compass configuration
 compass_config do |config|
 #   config.output_style = :compact
-  config.http_path = ""
+  config.relative_assets = true
+  #config.http_path = "/glucose-html5/"
   config.images_dir = "images"
   config.javascripts_dir = "js"
 end
