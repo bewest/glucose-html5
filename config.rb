@@ -37,7 +37,7 @@ end
 #   page "/admin/*"
 # end
 with_layout :gist do
-  page "/demos/*"
+  page "/demos/*", :directory_indexes => false
 end
 
 # Proxy (fake) files
@@ -69,7 +69,6 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
-page "/demos/zoom/*", :directory_indexes => false
 
 
 # Build-specific configuration
