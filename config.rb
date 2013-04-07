@@ -14,8 +14,8 @@ require 'bootstrap-sass'
 # Change Compass configuration
 compass_config do |config|
 #   config.output_style = :compact
-  config.http_path = "/"
-  config.images_dir = "img"
+  config.http_path = ""
+  config.images_dir = "images"
   config.javascripts_dir = "js"
 end
 
@@ -88,5 +88,5 @@ configure :build do
   # activate :smusher
   
   # Or use a different image path
-  set :http_path, "/images/"
+  # set :http_path, "/images/"
 end
