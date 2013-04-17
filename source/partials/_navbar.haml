@@ -2,7 +2,7 @@
   .navbar-inner
     = partial "partials/github_ribbon"
     .container
-      - prefix = data.page.name == 'index' ? '' : '..'
+      - prefix = data.page.name == 'index' ? '.' : '..'
       = link_to("Glycemia HTML5 #{data.page.name}", "#{prefix}/", :class => 'brand')
       .nav-collapse
         %ul.nav
