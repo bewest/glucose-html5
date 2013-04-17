@@ -40,6 +40,10 @@ with_layout :gist do
   page "/demos/*", :directory_indexes => false
 end
 
+with_layout :article do
+  page "/wiki/*", :directory_indexes => false
+end
+
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
