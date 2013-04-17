@@ -6,7 +6,7 @@
       .nav-collapse
         %ul.nav
           %li{:class => data.page.name == 'index' ? 'active' : ''}
-            %a(href="#{url('index')}") Home
+            %a(href="#{url_for('index')}") Home
           %li{:class => data.page.name == 'twocolumns' ? 'active' : ''}
             %a(href="twocolumns") Two Columns Layout
           %li{:class => data.page.name == 'contact' ? 'active' : ''}
