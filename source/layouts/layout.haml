@@ -23,11 +23,10 @@
   = yield_content :head
 
 %body{ :class => page_classes }
+
   = partial "partials/navbar"
-
-  #container.container
-
-    #main{ :role => 'main' }
+  #container.container-fluid
+    #main.row-fluid{ :role => 'main' }
       = yield
       .markdown-body.entry-body
         = yield_content :content
