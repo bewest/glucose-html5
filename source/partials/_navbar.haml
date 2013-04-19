@@ -3,6 +3,10 @@
     = partial "partials/github_ribbon"
     .container
       - prefix = data.page.name == 'index' ? '.' : '..'
+      %span.btn-navbar.btn{:'data-target' => '.nav-collapse', :'data-toggle' => 'collapse'}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
       = link_to("Glycemia HTML5 #{data.page.name}", "#{prefix}/", :class => 'brand')
       .nav-collapse
         %ul.nav

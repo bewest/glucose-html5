@@ -1,5 +1,5 @@
 // Loads all Bootstrap javascripts
 //= require bootstrap
-//= require_tree ./libs
+//= require ./libs/autolink_heading.js
 //= require ./plugins.js
 //= require ./script.js
