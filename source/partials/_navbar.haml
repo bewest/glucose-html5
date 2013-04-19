@@ -1,4 +1,4 @@
-.navbar.nofix
+.navbar
   .navbar-inner
     = partial "partials/github_ribbon"
     .container
@@ -7,7 +7,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to("Glycemia HTML5 #{data.page.name}", "#{prefix}/", :class => 'brand')
+      /= link_to("Glycemia HTML5 #{data.page.name}", "#{prefix}/", :class => 'brand')
+      = link_to("Glycemia HTML5 #{data.page.name}", "/index", :class => 'brand')
       .nav-collapse
         %ul.nav
           %li{:class => data.page.name == 'index' ? 'active' : ''}
