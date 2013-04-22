@@ -8,12 +8,12 @@
         %span.icon-bar
         %span.icon-bar
       /= link_to("Glycemia HTML5 #{data.page.name}", "#{prefix}/", :class => 'brand')
-      = link_to("Glycemia HTML5 #{data.page.name}", "/index", :class => 'brand')
+      = link_to("Glycemia HTML5 #{data.page.name}", "/index.html", :class => 'brand')
       .nav-collapse
         %ul.nav
           %li{:class => data.page.name == 'index' ? 'active' : ''}
-            %a(href="#{url_for(prefix + '/')}") Home
+            %a(href="#{url_for('/index.html')}") Home
           %li{:class => data.page.name == 'twocolumns' ? 'active' : ''}
-            %a(href="#{prefix}/twocolumns") Two Columns Layout
+            %a(href="#{url_for('/twocolumns/index.html')}") Two Columns Layout
           %li{:class => data.page.name == 'contact' ? 'active' : ''}
-            = link_to("Contact", "#{prefix}/contact")
+            = link_to("Contact", "/contact/index.html")
