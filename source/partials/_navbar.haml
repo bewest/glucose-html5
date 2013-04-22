@@ -14,6 +14,6 @@
           %li{:class => data.page.name == 'index' ? 'active' : ''}
             %a(href="#{url_for('/index.html')}") Home
           %li{:class => data.page.name == 'twocolumns' ? 'active' : ''}
-            %a(href="#{url_for('/twocolumns/index.html')}") Two Columns Layout
+            %a(href="#{url_for('/twocolumns.html')}") Two Columns Layout
           %li{:class => data.page.name == 'contact' ? 'active' : ''}
-            = link_to("Contact", "/contact/index.html")
+            = link_to("Contact", "/contact.html")
