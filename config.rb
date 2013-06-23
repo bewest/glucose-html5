@@ -93,5 +93,5 @@ configure :build do
   # activate :smusher
   
   # Or use a different image path
-  set :http_prefix, "/glucose-html5"
+  set :http_prefix, "/"
 end
