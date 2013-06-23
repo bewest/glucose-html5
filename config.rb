@@ -72,6 +72,7 @@ set :js_dir, 'js'
 set :images_dir, 'images'
 
 activate :directory_indexes
+set :relative_links, true
 
 # Build-specific configuration
 configure :build do
